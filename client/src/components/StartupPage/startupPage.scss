@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255,255,255);
+}
+
+
+
+.startup_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', 'Roboto';
+    background-color: rgb(255,255,255);
+    button {
+        background-color: #55acee;
+        color: white;
+        border-radius: 20px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        border: 0;
+        padding: 10px 17px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: darken(#55acee, 10%);
+        }
+      }
+    .startup_right {
+        padding: 15px;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .sign_in_form {
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            Form {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                label {
+                    margin: 5px;
+                }
+                p {
+                    width: 220px;
+                }
+                input {
+                    padding: 5px;
+                    border-radius: 6px;
+                }
+            }
+            label {
+                margin: 5px;
+            }
+        }
+        .log_in_form {
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            Form {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                label {
+                    margin: 5px;
+                }
+            }
+            label {
+                margin: 5px;
+            }
+            input {
+                padding: 5px;
+                border-radius: 6px;
+            }
+        }
+    }
+    .startup_left {
+        margin: 40px;
+        width: 700px;
+        height: 700px;
+        padding: 15px;
+    }
+}
+
+
+.header {
+    border-bottom: 2px solid rgba(71, 69, 69, 0.753);
+    font-family: 'Segoe UI', 'Roboto';
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+}

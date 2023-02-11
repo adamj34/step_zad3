@@ -1,0 +1,222 @@
+.userPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    #followBtn {
+        width: 100px;
+        height: 30px;
+        background-color: #1DA1F2;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 25px;
+        &:hover {
+            background-color: #0C8AFF;
+            cursor: pointer;
+        }
+    }
+    #switchTweetsBtn {
+        width: 400px;
+        height: 30px;
+        background-color: #1DA1F2;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        &:hover {
+            background-color: #0C8AFF;
+            cursor: pointer;
+        }
+    }
+    #messageBtn {
+        width: 100px;
+        height: 30px;
+        background-color: #1DA1F2;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 25px;
+        &:hover {
+            background-color: #0C8AFF;
+            cursor: pointer;
+        }
+    }
+
+    .singleTweet {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid  #ccc;
+        border-radius: 10px;
+        padding: 17px;
+        gap: 7px;
+        width: 600px;
+        max-width: 650px;
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            max-height: 600px;
+            object-fit: cover;
+            align-self: center;
+            border-radius: 0;
+        }
+        button {
+            width: 70px;
+            height: 20px;
+            background-color: #55acee;
+            color: white;
+            border-radius: 20px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            border: 0;
+            margin-top: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: darken(#55acee, 10%);
+            }
+        }
+        .buttons_tweets {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            :last-child {
+                height: 45px;
+                width: 100px;
+            }
+        }
+        .comments {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            form {
+                display: flex;
+                margin-top: 15px;
+                align-self: center;
+                textarea {
+                    width: 400px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    margin-bottom: 10px;
+                }
+                button {
+                    width: 70px;
+                    height: 54.9px;
+                    border: 2px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    margin: 0;
+                }
+            }       
+            p {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            #empty_comm_msg {
+                margin-left: 55px;
+            }
+        }
+        #profilePic {
+            align-self: flex-start;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 100%;
+            border: black solid 1px;
+        }
+        #delBtn {
+            background-color: red;
+            margin: 0;
+            &:hover {
+                background-color: darken(red, 10%);
+            }
+        }
+    }
+
+    .chat {
+        border: 1px solid rgb(194, 190, 190);
+        padding: 10px;
+        width: 300px;
+        height: 400px;
+        position: fixed;        
+        bottom: 0;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 10px;
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        #msgContent {
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 15px;
+            input {
+                width: 230px;
+                padding: 5px;
+                border: 1px solid #55acee;
+                border-radius: 15px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                &:focus {
+                outline: none;
+                border: 1px solid #55acee;
+                }
+            }
+            button {
+                padding: 5px;
+                border-radius: 15px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border: 1px solid #55acee;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.singleTweet:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: 0.6s;
+    background-color: rgb(247,247,247);
+    }
+    
+    .singleTweet .buttons_tweets button:hover {
+    background-color: #0077B5;
+    }
+    
+    .singleTweet .buttons_tweets button:active {
+    transform: scale(0.95);
+    }

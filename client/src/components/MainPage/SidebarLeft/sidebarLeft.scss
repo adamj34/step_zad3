@@ -1,0 +1,16 @@
+.sidebarLeft {
+    font-family: 'Roboto', 'Segoe UI';
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 5px;
+    padding: 5px;
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
