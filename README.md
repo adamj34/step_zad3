@@ -1,4 +1,4 @@
-# twitter_like_app
+# Twitter-like App
 
 # Getting Started with Create React App
 
