@@ -2,16 +2,16 @@
 
 This is a web app I created that loosely resembles Twitter.
 
-Backend: NodeJS, chat feature - MQTT over WebScokets
-
-Frontent: React + SCSS
-
+Backend: NodeJS, MQTT over WebScokets\
+Frontent: React + SCSS\
 Database: MongoDB (Mongoose)
 
 ## Features
 * creating posts (private or public)
 * follows, likes, comments, etc.
+* chat
 * user search
+
 
 ![Screenshot_20230211_103201](https://user-images.githubusercontent.com/99912841/218282437-fec7e89a-a2fe-480a-af33-b854e6ae6c95.png)
 ***
