@@ -1,5 +1,12 @@
 # Twitter-like App
 
+This is a web app I created that loosely resembles Twitter.
+Backend: NodeJS, chat feature - MQTT over WebScokets
+Frontent: React + SCSS
+Database: MongoDB (Mongoose)
+
+
+
 ![Screenshot_20230211_103201](https://user-images.githubusercontent.com/99912841/218282437-fec7e89a-a2fe-480a-af33-b854e6ae6c95.png)
 ***
 ![Screenshot_20230211_102638](https://user-images.githubusercontent.com/99912841/218282376-6b9e8575-0ea8-42b7-b182-568dda940161.png)
@@ -10,7 +17,10 @@
 ***
 ![Screenshot_20230211_103001](https://user-images.githubusercontent.com/99912841/218282428-ad018b99-ae6f-49cf-8d29-5387cc4b4619.png)
 
-
+## Features
+* creating posts (private or public)
+* follows, likes, comments, etc.
+* user search
 
 # Getting Started with Create React App
 
