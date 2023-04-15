@@ -10,7 +10,7 @@ class Database {
 
     connect() {
         dotenv.config()
-        mongoose.connect(process.env.MONGODB_URI)
+        mongoose.connect(`mongodb://${process.env.ME_CONFIG_MONGODB_ADMINUSERNAME}:${process.env.ME_CONFIG_MONGODB_ADMINPASSWORD}@${process.env.ME_CONFIG_MONGODB_SERVER}:27017/`)
             .then(() => {
                 console.log('Database connection successful')
             })
